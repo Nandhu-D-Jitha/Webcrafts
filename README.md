@@ -9,9 +9,9 @@ Please fill in the required details below and submit your repository or website 
 
 ## 📌 Project Information  
 
-- **Team Name (if applicable):** _(Enter your team name here)_  
-- **Developer(s):** _(List team members or individual developer name)_  
-- **Project Repository Link:** [Your GitHub Repo](#)  
+- **Team Name (if applicable):** World Wide Webdevelopers  
+- **Developer(s):** Vivek Krishnan M.J  
+- **Project Repository Link:**   
 - **Live Website Link:** [Your Live Website](#)  
 
 ---
