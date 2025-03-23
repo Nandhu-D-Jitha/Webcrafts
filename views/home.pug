@@ -7,7 +7,8 @@ html(lang="en")
     style 
         include ../static/home.css
   body
-    img(src="../static/ceplogo.png", alt="Header Image")
+    header 
+      img(src="../static/ceplogo.png", alt="Header Image")
     nav
       ul
         li
@@ -39,7 +40,26 @@ html(lang="en")
             img(src=image, alt="Slider Image")
       a.prev(&lt;)
       a.next(&gt;)
-    main
-      // Your main content goes here
+    div.background
+      each _ in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        div.bubble
+    div.content
+      section.section(id="news")
+        h2 News
+        each item in ['News Item 1', 'News Item 2', 'News Item 3']
+          div.item= item
+        a.view-all(href="news.html") View All
+      section.section(id="events")
+        h2 Events
+        each item in ['Event 1', 'Event 2', 'Event 3']
+          div.item= item
+        a.view-all(href="events.html") View All
+      section.section(id="quotations")
+        h2 Quotations and Tenders
+        each item in ['Quotation 1', 'Quotation 2', 'Quotation 3']
+          div.item= item
+        a.view-all(href="quotations.html") View All
+    //- main
+    //-   // Your main content goes here
     script 
         include home.js

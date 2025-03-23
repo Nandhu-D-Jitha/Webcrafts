@@ -48,3 +48,15 @@ function togglePause() {
     element.classList.toggle("paused");
     console.log("Hello world")
 }
+
+// Optional: Add interactivity or additional animations using JavaScript
+document.addEventListener('mousemove', (e) => {
+    const particles = document.querySelectorAll('.particle');
+    particles.forEach((particle) => {
+      const speed = particle.getAttribute('data-speed') || 1;
+      const x = (window.innerWidth - e.pageX * speed) / 100;
+      const y = (window.innerHeight - e.pageY * speed) / 100;
+      particle.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+  });
+  
