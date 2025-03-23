@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Website with Image Header and Navbar
+    style 
+        include ../static/home.css
+  body
+    img(src="../static/ceplogo.png", alt="Header Image")
+    nav
+      ul
+        li
+          a(href="#home") Home
+        li
+          a(href="#institute") The Institute
+        li
+          a(href="#academics") Academics
+        li
+          a(href="#administration") Administration
+        li
+          a(href="#department") Department
+        li
+          a(href="#facilities") Facilities
+        li
+          a(href="#happenings") Happenings
+        li
+          a(href="#etlab-login") Etlab Login
+    div.pav
+      .announcements-box
+        h3 Announcements
+      .sliding-text-container
+        .sliding-text
+          | Welcome to our website! Check out the latest updates and news.
+    div.slider
+      div.slides
+        each image in ['../static/img1.png', '../static/img2.png', '../static/img3.png']
+          div.slide
+            img(src=image, alt="Slider Image")
+      a.prev(&lt;)
+      a.next(&gt;)
+    main
+      // Your main content goes here
+    script 
+        include home.js
